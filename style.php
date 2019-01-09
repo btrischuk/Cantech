@@ -479,8 +479,8 @@ padding-right: 4px;
 	font-weight: 400;
 	line-height: 1.5;margin-top:8px;}
     .fsp{flex-basis: calc(100% - 30px);}
-    .fsp-img{width:40%;float:left;margin-right:20px;}
-    .fsp-cnt{width:54%;float:left;}
+    .fsp-img{width:100%;float:left;margin-right:0px;}
+    .fsp-cnt{width:100%;float:left;}
     .at-dt{margin: 10px 0px 0px 0px;}
     .hmp .loop-wrapper {margin-top: 0;}
     .arch-tlt{margin:20px 0px;}
@@ -1056,8 +1056,8 @@ if ( isset($redux_builder_amp['ampforwp-disqus-comments-support']) && $redux_bui
     #pagination {margin: 20px 0px 20px 0px;border-top: none;}
     .amp-post-title{padding-top:10px;font-size:2.6rem;}
     .fsp{flex-basis: calc(100% - 30px);}
-    .fsp-img{width:40%;float:left;margin-right:20px;}
-    .fsp-cnt{width:54%;float:left;}
+    .fsp-img{width:100%;float:left;margin-right:0px;}
+    .fsp-cnt{width:100%;float:left;}
     <?php if($redux_builder_amp['rp_design_type'] == '1'){?>
 	    .srp .related_link{font-size:20px;line-height:1.4;font-weight:600;}
 	    .rlp-image{width:200px;float:left;margin-right:15px;display: flex;flex-direction: column;}
@@ -1074,7 +1074,6 @@ if ( isset($redux_builder_amp['ampforwp-disqus-comments-support']) && $redux_bui
  }
 
 @media(max-width:480px){
-	.loop-wrapper{margin:0;}
     .r-pf .cntr{padding:0}
     .cntn-wrp p{line-height:1.3;}
     .related_posts .has_related_thumbnail {width: 100%;}
@@ -1675,6 +1674,7 @@ if( isset($redux_builder_amp['footer-customize-options']) && true ==  $redux_bui
 }
 .r-pf h3 {
     border-top:none;
+    margin-bottom: 15px;
 }
 .cntn-wrp ol {
     margin-bottom:0;
