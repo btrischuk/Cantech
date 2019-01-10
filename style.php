@@ -624,7 +624,7 @@ font-family: 'Barlow Semi Condensed', sans-serif;
 .sf-img figure{margin:0;}
 .sf-img .wp-caption-text{width: 1100px;text-align: left;margin: 0 auto;color: #a1a1a1;font-size: 14px;line-height:20px;font-weight: 500;border-bottom: 1px solid #ccc;padding: 15px 0px;}
 .sf-img .wp-caption-text:before{content:"\e412";font-family: 'amp-cantechfont';position: relative;top: 4px;opacity: 0.4;font-size:24pxmargin-right: 5px;}
-.sp-cnt{clear: both;width: 100%;display: inline-block; left:-1rem;position:relative; }
+.sp-cnt{clear: both;width: 100%;display: inline-block;position:relative; }
 .sp-rl{display:inline-flex;width:100%;}
 .sp-lt{display: flex;flex-direction: column;flex: 1 0 20%;order: 0;max-width:336px;}
 .sp-rt{width: 72%;margin-left: 60px;flex-direction: column;justify-content: space-around;order: 1;}
