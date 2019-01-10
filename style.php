@@ -855,6 +855,9 @@ letter-spacing: 0.10px;margin-top: 5px;font-weight: 400;}
 .related_link a:hover,.rp4wp-related-post-content a:hover,.amp-tags span a:hover {
      color:#000;
  }
+ .cntn-wrp .rp4wp-related-posts ul {
+    list-style-type:none;
+}
 
 .related_posts .related_link {
     padding: 0px;
