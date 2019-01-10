@@ -224,7 +224,6 @@ div .amp-logo {
 	left: 0px;
     position: relative;
 	z-index:10;
-	margin-top:2rem;
 }
 .amp-logo a{line-height:0;display:inline-block;opacity:0;width:-webkit-fill-available;height:5rem;<?php if(isset($redux_builder_amp['swift-element-color-control'] ['rgba']) && $redux_builder_amp['swift-element-color-control'] ['rgba']){?>color:<?php echo $redux_builder_amp['swift-element-color-control']['rgba']?>;<?php } ?>}
 .logo <?php if(is_single()){ ?> h2 <?php } else{?>h1<?php }?>{margin: 0;font-size: 17px;font-weight: 700;text-transform: uppercase;display:inline-block;}
