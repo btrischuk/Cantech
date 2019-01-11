@@ -1131,7 +1131,7 @@ if ( isset($redux_builder_amp['ampforwp-disqus-comments-support']) && $redux_bui
     .r-pf h3{padding: 15px 0px 0px 15px;}
 }
 @media(max-width:320px){
-    .cntn-wrp p {font-size: 16px;}  
+    .cntn-wrp p {font-size: 22px; font-size: 2.2rem;}  
 }
 <?php } } ?>
 <?php if ( isset($redux_builder_amp['ampforwp-dropcap']) && $redux_builder_amp['ampforwp-dropcap'] ) { ?>
