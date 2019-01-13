@@ -324,6 +324,7 @@ if($redux_builder_amp['menu-type'] == '1'){?>
 		font-size: 3rem;background-size: 16px;display: inline-block;top: 1px;padding: 5px;
 		color:#000;
 }
+.amp-menu .menu-item .toggle:after{top: 3px;}
 .m-menu{display: inline-block;width: 100%;padding: 2px 20px 10px 20px;}
 .m-scrl{overflow-y: auto;display: inline-block;width: 100%;overflow: scroll;max-height: 394vh;}
 ::-webkit-scrollbar { display: none; }
