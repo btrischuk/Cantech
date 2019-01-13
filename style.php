@@ -513,6 +513,7 @@ padding-right: 4px;
 @media(max-width:320px){
     .right a, .left a {padding: 10px 30px 14px;}
 }
+
 <?php }?>
 <?php //page and frontpage
 
@@ -701,11 +702,11 @@ if($redux_builder_amp['swift-social-position'] == 'below-content'){?>
     font-size:2.6rem;
     line-height: 1.3;
  }
- .sp-rt .cntn-wrp p:first-of-type{
+.sp-rt .cntn-wrp p:first-of-type{
     font-size: 2.6rem;
     line-height:1.3;
 }
- .cntn-wrp p {
+.sp-rt .cntn-wrp .related_link p:first-of-type, .sp-rt .cntn-wrp .rp4wp-related-post-content p:first-of-type{
     font-size: 2.2rem;
     line-height: 1.5;
     word-break: break-word;
@@ -1075,7 +1076,7 @@ if ( isset($redux_builder_amp['ampforwp-disqus-comments-support']) && $redux_bui
 }
 @media(max-width:640px){
     .related_posts .has_related_thumbnail {width: 100%;}
-    .amp-post-title{font-size:2.6rem;}
+    .amp-post-title{font-size:4.5rem;}
  }
 
 @media(max-width:480px){
@@ -1084,8 +1085,8 @@ if ( isset($redux_builder_amp['ampforwp-disqus-comments-support']) && $redux_bui
     .related_posts .has_related_thumbnail {width: 100%;}
     .rlp-image {width: 100%;float: none;margin-right: 0px;}
     .rlp-cnt {width: 100%;float: none;}
-    .amp-post-title {  font-size:55px;
-    font-size:2.6rem;
+    .amp-post-title {  font-size:45px;
+    font-size:4.5rem;
 	line-height: 1.2;
 	}
     .cntr{width: 100%;}
@@ -1129,9 +1130,6 @@ if ( isset($redux_builder_amp['ampforwp-disqus-comments-support']) && $redux_bui
 	margin: 0 0 16px;
 	font-style:italic;}
     .r-pf h3{padding: 15px 0px 0px 15px;}
-}
-@media(max-width:320px){
-    .cntn-wrp p {font-size: 22px; font-size: 2.2rem;}  
 }
 <?php } } ?>
 <?php if ( isset($redux_builder_amp['ampforwp-dropcap']) && $redux_builder_amp['ampforwp-dropcap'] ) { ?>
@@ -1731,6 +1729,10 @@ if( isset($redux_builder_amp['footer-customize-options']) && true ==  $redux_bui
     .f-w-f1 {padding: 35px 0px 10px 0px;}
     <?php endif; ?>
     .w-bl h4 {margin-bottom: 15px;}
+}
+@media(max-width:320px){
+    .cntn-wrp p {font-size: 22px; font-size: 2.2rem;}  
+    .sp-rt .cntn-wrp .related_link p, .sp-rt .cntn-wrp .rp4wp-related-posts p {font-size: 1.6rem;}
 }
 <?php if( checkAMPforPageBuilderStatus(get_the_ID()) && (ampforwp_is_front_page() || is_page()) ) { ?>
 .footer{margin-top: 0px;}
