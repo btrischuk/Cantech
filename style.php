@@ -1335,6 +1335,9 @@ if ( ampforwp_get_setting('gbl-sidebar') && ampforwp_get_setting('gnrl-sidebar')
 }
 .b-w .fsp, .arch-psts .fsp{
 	flex-basis: calc(49.33% - 30px);
+    padding: 20px 20px 20px 20px;
+    border: 3px solid #000;
+    margin: 10px 0;
 }
 .b-w .sdbr-right{
 	margin-top:30px;
