@@ -398,7 +398,8 @@ if( is_home() || is_archive() || is_search() || (function_exists('is_shop') && i
 .fbp-img{float:left;width:66%;}
 .fbp-cnt{float:left;width:31%;margin-left:30px;}
 .fbp-cnt .loop-category{margin-bottom:12px;}
-.fsp-cnt .loop-category{margin-bottom:7px;}
+.fsp-cnt .loop-category{margin-bottom:7px;    padding: 20px;
+    background: #dce0e3;}
 .fsp-cnt .loop-category li {font-weight: 500;}
 .fbp-cnt h2 {margin: 0px;font-size: 32px;line-height: 38px;font-weight:700;}
 .fbp-cnt h2 a{color:#191919;}
@@ -408,7 +409,7 @@ if( is_home() || is_archive() || is_search() || (function_exists('is_shop') && i
 .fbp-cnt .author-details a:hover{color: #000;}
 .loop-wrapper{display: flex;flex-wrap: wrap;margin: -15px;margin-right: 0;margin-top: -10px;}
 .loop-category li{display: inline-block;list-style-type: none;margin-right: 10px;font-size: 10px;font-weight: 600;letter-spacing: 1.5px;}
-ul .loop-category, .fsp-cnt .loop-category, .loop-category li a{color: #9a9ea1;
+ul .loop-category, .fsp-cnt .loop-category, .loop-category li a{color: #765298;
 	font-size: 15px;
 	font-size: 1.5rem;
 	text-transform: uppercase;
@@ -422,6 +423,7 @@ display: block;
 	font-size: 22px;
 	font-size: 2.2rem;
 	font-weight: 400;
+    margin-bottom: 26px;
 	line-height: 1.5;letter-spacing: 0.10px;word-break: break-word;}
 .fbp:hover h2 a, .fsp:hover h2 a{}
 h2 loop-title, .fsp h2 a{color:#000;}  
@@ -434,7 +436,7 @@ h2 .loop-title,.fsp h2{font-size: 35px;
 	margin: 0 0 16px;
 	font-style:italic;}
 .at-dt{font-size:11px;color:#808080;margin:12px 0px 9px 0px; display: inline-flex;}
-.pt-dt{margin: 8px 0px 0px 0px;display: inline-flex; color: #9a9ea1;font-size:1.5rem;text-transform:uppercase;}
+.pt-dt{margin: 8px 0px 24px 0px;display: inline-flex; color: #9a9ea1;font-size:1.5rem;text-transform:uppercase;}
 div.loop-date:before {
     content: "/";
 padding-right: 4px;
@@ -689,6 +691,7 @@ padding-right: 4px;
 	font-size: 2.2rem;
 	font-weight: 400;
 	line-height: 1.5;letter-spacing: 0.10px;word-break: break-word;}
+
 <?php // Social Sharing Conditional CSS
 if($redux_builder_amp['swift-social-position'] == 'above-content'){?>
 .shr-txt{display:none;}
@@ -1033,7 +1036,6 @@ padding-right: 4px;
 blockquote{margin-bottom:20px;}
 blockquote p {font-size: 34px; line-height: 1.4; font-weight: 700; position: relative; padding: 30px 0 0 0; }
 blockquote p:before {content: "";border-top: 8px solid #000;width: 115px;line-height: 40px;display: inline-block;position: absolute;top: 0;}
-
 <?php // Comments Pagination 
 if( isset($redux_builder_amp['wordpress-comments-support']) && 1 == $redux_builder_amp['wordpress-comments-support']){?>
 .cmts-wrap{display:flex;width:100%;margin-top: 30px;padding-bottom:30px;border-bottom:1px solid #eee;}
@@ -1381,7 +1383,7 @@ if ( (isset($redux_builder_amp['gbl-sidebar']) && $redux_builder_amp['gbl-sideba
 /*** Sidebar CSS ***/
 <?php if ( is_active_sidebar( 'swift-sidebar' ) ) : ?>
 .sdbr-right{
-		background-color: #dce0e3;
+	background-color: #dce0e3;
 	display:flex;
 	flex-direction:column;
 	width:33.5%; /*originally 30% */
