@@ -122,7 +122,7 @@ overflow: hidden;
     }
     
    .search-form:after {
-font-family: 'amp-cantechfont' !important;
+    font-family: 'amp-cantechfont' !important;
     content: "\e902";
     position: absolute;
     top: 30px;
@@ -160,6 +160,9 @@ input.search-form-submit{
     border:0;
 }
 
+.search-form-label {
+display:none;
+}
 
 *,*:after,*:before {
 box-sizing: border-box;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;-ms-box-sizing: border-box;-o-box-sizing: border-box;}
