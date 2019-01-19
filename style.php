@@ -411,7 +411,7 @@ if( is_home() || is_archive() || is_search() || (function_exists('is_shop') && i
 .fbp-img{float:left;width:66%;}
 .fbp-cnt{float:left;width:31%;margin-left:30px;}
 .fbp-cnt .loop-category{margin-bottom:12px;}
-.fsp-cnt .loop-category{margin-bottom:7px;    padding: 20px;
+.fsp-cat {margin-bottom:7px;    padding: 20px;
     background: #dce0e3;}
 .fsp-cnt .loop-category li {font-weight: 500;}
 .fbp-cnt h2 {margin: 0px;font-size: 32px;line-height: 38px;font-weight:700;}
@@ -422,22 +422,45 @@ if( is_home() || is_archive() || is_search() || (function_exists('is_shop') && i
 .fbp-cnt .author-details a:hover{color: #000;}
 .loop-wrapper{display: flex;flex-wrap: wrap;margin: -15px;margin-right: 0;margin-top: -10px;}
 .loop-category li{display: inline-block;list-style-type: none;margin-right: 10px;font-size: 10px;font-weight: 600;letter-spacing: 1.5px;}
+.fsp-cnt p a {text-decoration: underline;}
 ul .loop-category, .fsp-cnt .loop-category, .loop-category li a{color: #765298;
 	font-size: 15px;
 	font-size: 1.5rem;
 	text-transform: uppercase;
-	margin-bottom:10px;
-	margin-bottom:1rem;
+	margin-bottom:0;
 display: block;
-	font-weight:600;}
+	font-weight:600;
+    line-height: 1.3;}
 .loop-category li:hover a{color:#000;}
 .fbp-cnt p, .fsp-cnt p{color: #000;
 	font-family: 'Barlow Semi Condensed', sans-serif;
-	font-size: 22px;
-	font-size: 2.2rem;
+	font-size: 19px;
+	font-size: 1.9rem;
 	font-weight: 400;
     margin-bottom: 26px;
 	line-height: 1.5;letter-spacing: 0.10px;word-break: break-word;}
+ul.loop-category:before {
+    content: "/ filed under:";
+    padding-right: 4px;
+    color: #9a9ea1;
+}
+.amp-tags {
+    padding-right: 4px;
+    color: #9a9ea1;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    display: block;
+    font-weight: 600;
+    line-height: 1.3;
+}
+.amp-tags:before {
+    content: "/";
+}
+.author-name:before {
+    content: "by";
+    padding-right: 4px;
+}
 .fbp:hover h2 a, .fsp:hover h2 a{}
 h2 loop-title, .fsp h2 a{color:#000;}  
 .fsp{margin: 15px;flex-basis: calc(33.33% - 30px);}
@@ -449,10 +472,15 @@ h2 .loop-title,.fsp h2{font-size: 35px;
 	margin: 0 0 16px;
 	font-style:italic;}
 .at-dt{font-size:11px;color:#808080;margin:12px 0px 9px 0px; display: inline-flex;}
-.pt-dt{margin: 8px 0px 24px 0px;display: inline-flex; color: #765298;font-size:1.5rem;text-transform:uppercase;}
+.pt-dt{margin: 8px 0px 24px 0px;display: inline-flex; color: #9a9ea1;font-size:1.5rem;text-transform:uppercase;}
 div.loop-date:before {
     content: "/";
 padding-right: 4px;
+}
+div.loop-date:after {
+    content: "/";
+    padding-right: 4px;
+    padding-left: 4px;
 }
 .arch-tlt{margin:30px 0px 30px;display:inline-block;width:100%;}
 .amp-archive-title, .amp-loop-label{font-weight:600;}
@@ -1020,28 +1048,32 @@ border-bottom: none;
 .loop-wrapper{display: flex;flex-wrap: wrap;margin: -15px;margin-bottom: 15px;}
 .loop-category li{display: inline-block;list-style-type: none;margin-right: 10px;font-size: 10px;font-weight: 600;letter-spacing: 1.5px;}
 ul .loop-category, .fsp-cnt .loop-category, .loop-category li a {
-  color: #765298;
+    color: #765298;
 	font-size: 15px;
 	font-size: 1.5rem;
 	text-transform: uppercase;
-	margin-bottom:10px;
-	margin-bottom:1rem;
-display: block;
-	font-weight:600;}
+	margin-bottom:0;
+    display: block;
+	font-weight:600;
+    line-height: 1.3;}
+.fsp .fsp-cnt {
+    background-color: green;
+    padding: 20px;
+}
 .loop-category li:hover a{color:#000;}
 .fsp:hover h2 a{color: #000;}
 .fsp h2 a{color:#000;}  
 .fsp{margin: 15px;flex-basis: calc(33.33% - 30px);}
 .fsp-img {margin-bottom:10px;}
-h2 .loop-title, .fsp h2{ font-size: 35px;
-	font-size: 3.5rem;
+h2 .loop-title, .fsp h2{ font-size: 30px;
+	font-size: 3rem;
     font-weight: 600;
 	line-height: 1.2;
 	margin: 0 0 16px;
 	font-style:italic;;}
 .fsp-cnt .loop-category{margin-bottom:8px;}
 .fsp-cnt .loop-category li {font-weight: 500;}
-.pt-dt{margin: 8px 0px 0px 0px;display: inline-flex;color:#765298;}
+.pt-dt{margin: 8px 0px 0px 0px;display: inline-flex;color:#9a9ea1}
 div.loop-date:before{
     content: "/";
 padding-right: 4px;
@@ -1143,8 +1175,8 @@ if ( isset($redux_builder_amp['ampforwp-disqus-comments-support']) && $redux_bui
 @media(max-width:425px){
     .sp-rt .amp-author {margin-bottom: 10px;}
     #pagination {margin: 20px 0px 10px 0px;}
-    h2 .loop-title, .fsp h2 {ont-size: 35px;
-	font-size: 3.5rem;
+    h2 .loop-title, .fsp h2 {font-size: 30px;
+	font-size: 3rem;
     font-weight: 600;
 	line-height: 1.2;
 	margin: 0 0 16px;

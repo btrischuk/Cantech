@@ -13,6 +13,8 @@ if( true == $redux_builder_amp['ampforwp-homepage-posts-image-modify-size'] ){
         </div>
         <div class="pt-dt">
             <?php amp_loop_date(); ?>
+            <?php amp_loop_author(); ?>
+            
         </div>
         <div class="fsp-img">
     	    <?php amp_loop_image($args); ?>
@@ -22,6 +24,7 @@ if( true == $redux_builder_amp['ampforwp-homepage-posts-image-modify-size'] ){
         </div>
         <div class="fsp-cnt fsp-cat">
             <?php amp_loop_category(); ?>
+            <?php amp_tags_list();?>
         </div>
 </div>
 <?php endwhile; amp_loop('end');  ?>
