@@ -14,7 +14,7 @@ if( true == $redux_builder_amp['ampforwp-homepage-posts-image-modify-size'] ){
         <div class="pt-dt">
             <?php amp_loop_date(); ?>
             <?php amp_loop_author(); ?>
-            
+            <!-- <p>Written by: <a href="<?php echo get_the_author_link(); ?>"><?php amp_loop_author(); ?></a></p> -->
         </div>
         <div class="fsp-img">
     	    <?php amp_loop_image($args); ?>

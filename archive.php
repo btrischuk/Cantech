@@ -1,11 +1,12 @@
 <?php global $redux_builder_amp;
 amp_header() ?>
 <div class="cntr archive">
-	<div class="arch-tlt">
-		<?php amp_archive_title(); ?>
-	</div>
+
 	<div class="arch-dsgn">
 		<div class="arch-psts">
+		<div class="arch-tlt">
+			<?php the_archive_title( '<h1 class="page-title">', '</h1>' );?>
+		</div>
 			<?php amp_loop_template(); ?>
 			<?php amp_pagination(); ?>
 		</div>
