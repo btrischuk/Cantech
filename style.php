@@ -447,6 +447,10 @@ ul.loop-category:before {
 ul.loop-category li a:after {
     content: ',';
 }
+
+ul.loop-category li:last-child a:after{
+  content: '';
+}
 .amp-tags {
     padding-right: 4px;
     color: #9a9ea1;
