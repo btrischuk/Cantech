@@ -7,7 +7,6 @@
 			<?php if ( true == $redux_builder_amp['ampforwp-bread-crumb'] ) {
 				amp_breadcrumb();
 			}?>
-			<?php amp_categories_list();?>
 			<?php amp_title(); ?>
 			<?php if( true == $redux_builder_amp['enable-excerpt-single'] ){ ?>
 				<div class="tl-exc">
@@ -190,7 +189,6 @@ do_action("ampforwp_single_design_type_handle");
 						<?php if ( true == $redux_builder_amp['ampforwp-bread-crumb'] ) {
 							amp_breadcrumb();
 						}?>
-						<?php amp_categories_list();?>
 						<?php amp_title(); ?>
 						<?php if( true == $redux_builder_amp['enable-excerpt-single'] ){ ?>
 							<div class="tl-exc">
